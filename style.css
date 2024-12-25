@@ -1,0 +1,355 @@
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav img {
+    width: 150px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    /* margin-top: 50px; */
+    margin-left: 15px;
+    font-weight: 35px;
+    position: relative;
+}
+
+.navbar-nav a:hover {
+    color: green;
+}
+
+.navbar-nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: green;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.navbar-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+#home {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text {
+    padding: 40px;
+}
+
+.img img {
+    margin-top: 40px;
+}
+
+#explore {
+    padding: 10px;
+    text-decoration: none;
+    background-color: green;
+    border-radius: 10px;
+    border: 1px double white;
+    cursor: pointer;
+    transition: .5s ease-in;
+}
+
+#explore:hover {
+    background-color: white;
+    border: 2px solid green;
+}
+
+#explore a:hover {
+    color: black;
+}
+
+#explore a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: medium;
+    color: white;
+}
+
+#about h1 {
+    text-align: center;
+}
+
+#about p {
+    text-align: center;
+    padding: 20px;
+}
+
+#gallery h1 {
+    text-align: center;
+}
+
+#gallery {
+    padding: 10px;
+}
+
+#gallery img {
+    margin: 2px;
+}
+
+img {
+    cursor: pointer;
+}
+
+h1 {
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 10px;
+    width: 15%;
+    height: 2px;
+    background-color: green;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+}
+
+h1:hover::after {
+    transform: scaleX(1);
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2:hover {
+    cursor: pointer;
+    color: green;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: green;
+}
+
+#top-btn {
+    border: 2px solid green;
+    color: black;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: medium;
+    position: fixed;
+    right: 10px;
+    top: 90%;
+    animation-name: appear;
+    animation-timeline: scroll(y);
+}
+
+#top-btn a i {
+    color: black;
+    font-weight: bolder;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-1 img {
+    width: 380px;
+    height: 150px;
+}
+
+.card-2 img {
+    width: 380px;
+    height: 150px;
+}
+
+.card-3 img {
+    width: 380px;
+    height: 150px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+h3:hover {
+    cursor: pointer;
+    color: green;
+}
+
+.cards button {
+    border: 2px solid green;
+    padding: 10px;
+    font-weight: bold;
+    font-size: medium;
+    font-family: serif;
+    border-radius: 5px;
+    background: transparent;
+    transition: all .5s;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+    box-shadow: 0px 7px 7px lightgray;
+
+}
+
+.cards button:hover {
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    margin-left: 20px;
+}
+
+.contact p:hover {
+    cursor: pointer;
+}
+
+.facilities,
+.exprience,
+.link,
+.connect {
+    margin: 30px;
+}
+
+.connect i {
+    font-size: xx-large;
+
+}
+
+.fa-facebook {
+    color: rgb(92, 92, 245);
+    margin-left: 10px;
+}
+
+.fa-instagram {
+    margin-left: 10px;
+    color: rgb(254, 103, 103);
+}
+
+.fa-youtube {
+    color: rgb(254, 103, 103);
+
+}
+
+.fa-twitter {
+    color: rgb(102, 196, 233);
+    margin-left: 10px;
+}
+
+.form {
+    /* border: 2px solid lightgray; */
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 10px auto;
+    line-height: 30px;
+    box-shadow: 0px 7px 7px lightgray;
+}
+
+.form #username,
+#password,
+#num {
+    width: 80%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 5px;
+    height: 30px;
+    margin: 10px;
+ 
+}
+
+form #username,
+#password,
+#num::placeholder {
+    padding: 5px;
+}
+
+/* form label {
+    font-family: sans-serif;
+} */
+
+form select {
+    padding: 5px;
+    margin-left: 20px;
+    width: 76%;
+    border-radius: 5px;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid green;
+}
+
+textarea {
+    width: 90%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 5px;
+    height: 100px;
+    resize: none;
+    margin: 2px auto;
+}
+
+#message {
+    padding: 10px;
+    text-decoration: none;
+    background-color: green;
+    border-radius: 10px;
+    border: 1px double white;
+    cursor: pointer;
+    transition: .5s ease-in;
+    color: white;
+}
+
+#message:hover {
+    background-color: white;
+    border: 2px solid green;
+    color: black;
+}
